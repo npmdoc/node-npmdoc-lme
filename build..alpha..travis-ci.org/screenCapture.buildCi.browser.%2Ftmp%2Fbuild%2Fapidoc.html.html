@@ -1,0 +1,818 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/vajahath/lme#readme">lme (v1.5.1)</a>
+</h1>
+<h4>Simply and beautifully log to console.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lme">module lme</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.d">
+            function <span class="apidocSignatureSpan">lme.</span>d
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.dline">
+            function <span class="apidocSignatureSpan">lme.</span>dline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.e">
+            function <span class="apidocSignatureSpan">lme.</span>e
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.eline">
+            function <span class="apidocSignatureSpan">lme.</span>eline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.h">
+            function <span class="apidocSignatureSpan">lme.</span>h
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.hline">
+            function <span class="apidocSignatureSpan">lme.</span>hline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.i">
+            function <span class="apidocSignatureSpan">lme.</span>i
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.iline">
+            function <span class="apidocSignatureSpan">lme.</span>iline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.line">
+            function <span class="apidocSignatureSpan">lme.</span>line
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.s">
+            function <span class="apidocSignatureSpan">lme.</span>s
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.sline">
+            function <span class="apidocSignatureSpan">lme.</span>sline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.t">
+            function <span class="apidocSignatureSpan">lme.</span>t
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.tline">
+            function <span class="apidocSignatureSpan">lme.</span>tline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.w">
+            function <span class="apidocSignatureSpan">lme.</span>w
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.wline">
+            function <span class="apidocSignatureSpan">lme.</span>wline
+            <span class="apidocSignatureSpan">(char, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">lme.</span>linesUtil</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">lme.</span>logUtil</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lme.linesUtil">module lme.linesUtil</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.linesUtil.logLine">
+            function <span class="apidocSignatureSpan">lme.linesUtil.</span>logLine
+            <span class="apidocSignatureSpan">(char, length, errLogFunc, warnLogFunc, colorFunc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.linesUtil.logLineWithTrace">
+            function <span class="apidocSignatureSpan">lme.linesUtil.</span>logLineWithTrace
+            <span class="apidocSignatureSpan">(char, length, errLogFunc, warnLogFunc, colorFunc)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lme.logUtil">module lme.logUtil</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.logUtil.logTraceWithColor">
+            function <span class="apidocSignatureSpan">lme.logUtil.</span>logTraceWithColor
+            <span class="apidocSignatureSpan">(colorFunc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lme.logUtil.logWithColor">
+            function <span class="apidocSignatureSpan">lme.logUtil.</span>logWithColor
+            <span class="apidocSignatureSpan">(colorFunc)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lme" id="apidoc.module.lme">module lme</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lme.d" id="apidoc.element.lme.d">
+        function <span class="apidocSignatureSpan">lme.</span>d
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">d = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`console.log` ging done right, beautifully.**
+
+
+You don't have to write the 13 char long `console.log()` anymore. Try:
+
+```javascript
+lme.<span class="apidocCodeKeywordSpan">d</span>("hello world");
+```
+:dizzy: _This package is built from ground up with simplicity in mind. Best configuration ships with this package. i.e, You don&amp;#
+x27;t have to configure anything extra to start using this package. But if you need something unique, or if color of your terminal
+ background contradicts with this package's colors (causing accessibility issues), or if you are a kind of unicorn, you have
+ wonderful options to adjust them here. And this package is bound to strictly follow semantic versioning._
+
+&gt; **v1.5** is out. **What's new?**&lt;br&gt;
+&gt;  **-** Set environment variable to [adjust level of logging](https://github.com/vajahath/lme/wiki/Adjust-Logging-Level).&amp;#
+x3c;br&gt;
+&gt;  **-** Define your own [color schemes for lines](https://github.com/vajahath/lme/wiki/Custom-Color-Schemes) &lt;br&gt;
+;
+&gt;  **-** Define your own [color schemes for texts](https://github.com/vajahath/lme/wiki/Custom-Color-Schemes) &lt;br&gt;
+;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.dline" id="apidoc.element.lme.dline">
+        function <span class="apidocSignatureSpan">lme.</span>dline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+### APIs for drawing lines
+
+| status            | name            | when to use                | example                   |
+| :---------------- | :-------------- | :------------------------- | :------------------------ |
+| `line`            | default         | default output             | `lme.line();`             |
+| `dline`           | same as line    | default output             | `lme.<span class="apidocCodeKeywordSpan">dline</span>("
+;*", 5);`      |
+| `sline`           | success         | on success output          | `lme.sline("*");`         |
+| `eline`           | error           | on error-ed output         | `lme.eline("/", 50);`     |
+| `wline`           | warning         | for warnings like output   | `lme.wline("*");`         |
+| `hline`           | highlight       | for highlighting an output | `lme.hline("*");`         |
+
+
+# Advanced fearures
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.e" id="apidoc.element.lme.e">
+        function <span class="apidocSignatureSpan">lme.</span>e
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">e = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`lme.&lt;status&gt;(message);`
+
+### Example
+```javascript
+const lme = require('lme');
+
+lme.d("my kitty is pinky!"); // default style, used for anonymous outputs.
+lme.<span class="apidocCodeKeywordSpan">e</span>("Snap! something went wrong."); // used for logging errors.
+lme.s("Oh yeah!"); // used for logging success.
+lme.w("Attention! Thank you for your attention."); // used for logging warnings.
+
+// lines
+lme.line() // used to draw lines
+lme.eline() // used to draw lines in error theme.
+lme.sline() // used to draw lines in success theme.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.eline" id="apidoc.element.lme.eline">
+        function <span class="apidocSignatureSpan">lme.</span>eline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">eline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+lme.d("my kitty is pinky!"); // default style, used for anonymous outputs.
+lme.e("Snap! something went wrong."); // used for logging errors.
+lme.s("Oh yeah!"); // used for logging success.
+lme.w("Attention! Thank you for your attention."); // used for logging warnings.
+
+// lines
+lme.line() // used to draw lines
+lme.<span class="apidocCodeKeywordSpan">eline</span>() // used to draw lines in error theme.
+lme.sline() // used to draw lines in success theme.
+```
+
+# APIs
+
+**Syntax :** `lme.&lt;status&gt;(message);`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.h" id="apidoc.element.lme.h">
+        function <span class="apidocSignatureSpan">lme.</span>h
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">h = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+| status        | name       | when to use                | example               |
+| :------------ | :--------- | :------------------------- | :-------------------- |
+| `d`           | default    | default output             | `lme.d("hi");`        |
+| `s`           | success    | on success output          | `lme.s("hi");`        |
+| `e`           | error      | on error-ed output         | `lme.e("hi");`        |
+| `w`           | warning    | for warnings like output   | `lme.w("hi");`        |
+| `h`           | highlight  | for highlighting an output | `lme.<span class="apidocCodeKeywordSpan">h</span>("hi");`        |
+| `i`           | info       | for info like output       | `lme.i("hi");`        |
+| `t`           | trace      | for tracing stack          | `lme.t("hi");`        |
+
+&lt;br&gt;
+
+**where `message` can be `string` / `float` / `int` / `objects`.** *(note that javascript treats `arrays` as `objects`.)*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.hline" id="apidoc.element.lme.hline">
+        function <span class="apidocSignatureSpan">lme.</span>hline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| status            | name            | when to use                | example                   |
+| :---------------- | :-------------- | :------------------------- | :------------------------ |
+| `line`            | default         | default output             | `lme.line();`             |
+| `dline`           | same as line    | default output             | `lme.dline("*", 5);`      |
+| `sline`           | success         | on success output          | `lme.sline("*");`         |
+| `eline`           | error           | on error-ed output         | `lme.eline("/", 50);`     |
+| `wline`           | warning         | for warnings like output   | `lme.wline("*");`         |
+| `hline`           | highlight       | for highlighting an output | `lme.<span class="apidocCodeKeywordSpan">hline</span>("
+;*");`         |
+
+
+# Advanced fearures
+
+- **[Custom Color Schemes](https://github.com/vajahath/lme/wiki/Custom-Color-Schemes):** Define your own color schems.
+- **[Adjust logging level](https://github.com/vajahath/lme/wiki/Adjust-Logging-Level):** Set environment variable to adjust logging
+ levels.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.i" id="apidoc.element.lme.i">
+        function <span class="apidocSignatureSpan">lme.</span>i
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| status        | name       | when to use                | example               |
+| :------------ | :--------- | :------------------------- | :-------------------- |
+| `d`           | default    | default output             | `lme.d("hi");`        |
+| `s`           | success    | on success output          | `lme.s("hi");`        |
+| `e`           | error      | on error-ed output         | `lme.e("hi");`        |
+| `w`           | warning    | for warnings like output   | `lme.w("hi");`        |
+| `h`           | highlight  | for highlighting an output | `lme.h("hi");`        |
+| `i`           | info       | for info like output       | `lme.<span class="apidocCodeKeywordSpan">i</span>("hi");`        |
+| `t`           | trace      | for tracing stack          | `lme.t("hi");`        |
+
+&lt;br&gt;
+
+**where `message` can be `string` / `float` / `int` / `objects`.** *(note that javascript treats `arrays` as `objects`.)*
+
+You can also use multiple arguments with `lme` like:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.iline" id="apidoc.element.lme.iline">
+        function <span class="apidocSignatureSpan">lme.</span>iline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">iline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.line" id="apidoc.element.lme.line">
+        function <span class="apidocSignatureSpan">lme.</span>line
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">line = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Why `lme` *( logme )*
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/vajahath/lme.svg)](https://greenkeeper.io/)
+- Clean and semantically focused.
+- Consistent design for errors, warnings, successes etc.
+- Simpler to use than `console.log()` or even `console.log(chalk.red("hi"));`
+- **[Draw lines](#drawing-lines-with-lmeline)** with just a single function, `lme.<span class="apidocCodeKeywordSpan">line</span>()`.
+- Automatically expands `objects` and `arrays`. So that, you don't have to use `JSON.stringify()` anymore.
+- **[Define your own color schemes](https://github.com/vajahath/lme/wiki/Custom-Color-Schemes)** with `lmeconfig.json` file.
+- [Set environment variables to adjust logging level](https://github.com/vajahath/lme/wiki/Adjust-Logging-Level).
+- Actively maintained.
+
+![](https://raw.githubusercontent.com/vajahath/lme/stable/media/windows-object.png)
+![](https://raw.githubusercontent.com/vajahath/lme/stable/media/windows-string.png)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.s" id="apidoc.element.lme.s">
+        function <span class="apidocSignatureSpan">lme.</span>s
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">s = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+:dizzy: _This package is built from ground up with simplicity in mind. Best configuration ships with this package. i.e, You don&amp;#
+x27;t have to configure anything extra to start using this package. But if you need something unique, or if color of your terminal
+ background contradicts with this package's colors (causing accessibility issues), or if you are a kind of unicorn, you have
+ wonderful options to adjust them here. And this package is bound to strictly follow semantic versioning._
+
+&gt; **v1.5** is out. **What's new?**&lt;br&gt;
+&gt;  **-** Set environment variable to [adjust level of logging](https://github.com/vajahath/lme/wiki/Adjust-Logging-Level).&amp;#
+x3c;br&gt;
+&gt;  **-** Define your own [color schemes for lines](https://github.com/vajahath/lme/wiki/Custom-Color-Schemes) &lt;br&gt;
+;
+&gt;  **-** Define your own [color schemes for texts](https://github.com/vajahath/lme/wiki/Custom-Color-Schemes) &lt;br&gt;
+;
+&gt;  **-** Multiple argumnets support: _`lme.<span class="apidocCodeKeywordSpan">s</span>("hi", "hello")`
+_ &lt;br&gt;
+&gt;  **-** Stability, performance improvements and Bug fixes.
+
+## Why `lme` *( logme )*
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/vajahath/lme.svg)](https://greenkeeper.io/)
+- Clean and semantically focused.
+- Consistent design for errors, warnings, successes etc.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.sline" id="apidoc.element.lme.sline">
+        function <span class="apidocSignatureSpan">lme.</span>sline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+lme.e("Snap! something went wrong."); // used for logging errors.
+lme.s("Oh yeah!"); // used for logging success.
+lme.w("Attention! Thank you for your attention."); // used for logging warnings.
+
+// lines
+lme.line() // used to draw lines
+lme.eline() // used to draw lines in error theme.
+lme.<span class="apidocCodeKeywordSpan">sline</span>() // used to draw lines in success theme.
+```
+
+# APIs
+
+**Syntax :** `lme.&lt;status&gt;(message);`
+
+- **where `&lt;status&gt;` can have the following values:**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.t" id="apidoc.element.lme.t">
+        function <span class="apidocSignatureSpan">lme.</span>t
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">t = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| :------------ | :--------- | :------------------------- | :-------------------- |
+| `d`           | default    | default output             | `lme.d("hi");`        |
+| `s`           | success    | on success output          | `lme.s("hi");`        |
+| `e`           | error      | on error-ed output         | `lme.e("hi");`        |
+| `w`           | warning    | for warnings like output   | `lme.w("hi");`        |
+| `h`           | highlight  | for highlighting an output | `lme.h("hi");`        |
+| `i`           | info       | for info like output       | `lme.i("hi");`        |
+| `t`           | trace      | for tracing stack          | `lme.<span class="apidocCodeKeywordSpan">t</span>("hi");`        |
+
+&lt;br&gt;
+
+**where `message` can be `string` / `float` / `int` / `objects`.** *(note that javascript treats `arrays` as `objects`.)*
+
+You can also use multiple arguments with `lme` like:
+```js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.tline" id="apidoc.element.lme.tline">
+        function <span class="apidocSignatureSpan">lme.</span>tline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.w" id="apidoc.element.lme.w">
+        function <span class="apidocSignatureSpan">lme.</span>w
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">w = function () {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(loggingFunctionParams.color, arguments);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Example
+```javascript
+const lme = require('lme');
+
+lme.d("my kitty is pinky!"); // default style, used for anonymous outputs.
+lme.e("Snap! something went wrong."); // used for logging errors.
+lme.s("Oh yeah!"); // used for logging success.
+lme.<span class="apidocCodeKeywordSpan">w</span>("Attention! Thank you for your attention."); // used for logging warnings
+.
+
+// lines
+lme.line() // used to draw lines
+lme.eline() // used to draw lines in error theme.
+lme.sline() // used to draw lines in success theme.
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.wline" id="apidoc.element.lme.wline">
+        function <span class="apidocSignatureSpan">lme.</span>wline
+        <span class="apidocSignatureSpan">(char, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">wline = function (char, length) {
+			if (meetsLogLevelRequirement(loggingFunctionParams.level)) {
+				loggingFunctionParams.logFunction(char, length, m.e, m.w, loggingFunctionParams.color);
+			}
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Examples
+
+```javascript
+lme.line();
+lme.eline("^");
+lme.sline("@", 12);
+lme.<span class="apidocCodeKeywordSpan">wline</span>("#", 50);
+```
+
+### APIs for drawing lines
+
+| status            | name            | when to use                | example                   |
+| :---------------- | :-------------- | :------------------------- | :------------------------ |
+| `line`            | default         | default output             | `lme.line();`             |
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lme.linesUtil" id="apidoc.module.lme.linesUtil">module lme.linesUtil</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lme.linesUtil.logLine" id="apidoc.element.lme.linesUtil.logLine">
+        function <span class="apidocSignatureSpan">lme.linesUtil.</span>logLine
+        <span class="apidocSignatureSpan">(char, length, errLogFunc, warnLogFunc, colorFunc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function logLine(char, length, errLogFunc, warnLogFunc, colorFunc) {
+	buildAndLog(char, length, errLogFunc, warnLogFunc, colorFunc, console.log);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.linesUtil.logLineWithTrace" id="apidoc.element.lme.linesUtil.logLineWithTrace">
+        function <span class="apidocSignatureSpan">lme.linesUtil.</span>logLineWithTrace
+        <span class="apidocSignatureSpan">(char, length, errLogFunc, warnLogFunc, colorFunc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function logLineWithTrace(char, length, errLogFunc, warnLogFunc, colorFunc) {
+	buildAndLog(char, length, errLogFunc, warnLogFunc, colorFunc, console.trace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lme.logUtil" id="apidoc.module.lme.logUtil">module lme.logUtil</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lme.logUtil.logTraceWithColor" id="apidoc.element.lme.logUtil.logTraceWithColor">
+        function <span class="apidocSignatureSpan">lme.logUtil.</span>logTraceWithColor
+        <span class="apidocSignatureSpan">(colorFunc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function logTraceWithColor(colorFunc) {
+	var args = getMessageArgs(arguments);
+
+	console.log(colorFunc('\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; BEGIN'));
+	logMessage(colorFunc, args, console.trace);
+	console.log(colorFunc('&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; END\n'));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lme.logUtil.logWithColor" id="apidoc.element.lme.logUtil.logWithColor">
+        function <span class="apidocSignatureSpan">lme.logUtil.</span>logWithColor
+        <span class="apidocSignatureSpan">(colorFunc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function logWithColor(colorFunc) {
+	var args = getMessageArgs(arguments);
+	logMessage(colorFunc, args, console.log);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
